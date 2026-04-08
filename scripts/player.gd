@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 
 	# 入力方向を取得（WASD / 矢印キー）
-	var input_dir: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 
 	# カメラの向きを基準に移動方向を計算
 	var direction: Vector3 = Vector3.ZERO
