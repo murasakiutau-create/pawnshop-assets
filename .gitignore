@@ -1,0 +1,17 @@
+# Godot 4.x
+.godot/
+*.import
+*.uid_cache
+
+# Exports
+*.pck
+*.exe
+*.x86_64
+*.apk
+*.aab
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
