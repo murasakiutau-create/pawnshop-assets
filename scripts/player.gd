@@ -54,9 +54,10 @@ func _physics_process(delta: float) -> void:
 	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 
 	# カメラの向きを基準に移動方向を計算
+	# Godotでは -Z が前方向
 	var direction: Vector3 = Vector3.ZERO
 	direction += transform.basis.x * input_dir.x
-	direction += -transform.basis.z * input_dir.y
+	direction += transform.basis.z * input_dir.y
 	direction.y = 0
 	direction = direction.normalized()
 
